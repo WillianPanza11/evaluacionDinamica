@@ -4,7 +4,8 @@
     "description": "Laboratorio de pruebas dinámicas con Jest (VVS - Unidad 2)",
     "main": "src/compras.js",
     "scripts": {
-        "test": "jest --runInBand"
+        "test": "jest --runInBand",
+        "perf": "node scripts/rendimiento.js"
     },
     "keywords": [],
     "author": "",

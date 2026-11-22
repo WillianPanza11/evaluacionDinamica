@@ -1,0 +1,33 @@
+
+> vvs-u2-compras@1.0.0 test
+> jest --runInBand
+
+PASS tests/compras.test.js
+  RF-01: subtotal = precio x cantidad
+    √ CP-01: calcula el subtotal sin descuento (7 ms)
+    √ CP-17: precio 0 produce total 0 (supuesto SP-01)
+  RF-02: descuento de 0 a 100 %
+    √ CP-02: aplica un descuento del 10 %
+    √ CP-03: límite inferior, descuento 0 %
+    √ CP-04: límite superior, descuento 100 % produce 0 (1 ms)
+  RF-03: total con dos decimales
+    √ CP-05: redondea un resultado con más de dos decimales (1 ms)
+    √ CP-06: corrige la imprecisión de punto flotante (1 ms)
+  RF-04: RangeError para valores fuera de rango
+    √ CP-07: precio negativo (7 ms)
+    √ CP-08: cantidad igual a 0 (1 ms)
+    √ CP-09: cantidad negativa (2 ms)
+    √ CP-10: descuento menor que 0 (1 ms)
+    √ CP-11: descuento mayor que 100 (1 ms)
+  RF-05: TypeError para entradas no numéricas o no finitas
+    √ CP-12: precio como texto (2 ms)
+    √ CP-13: cantidad null (2 ms)
+    √ CP-14: descuento undefined (2 ms)
+    √ CP-15: precio NaN (1 ms)
+    √ CP-16: precio Infinity (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       17 passed, 17 total
+Snapshots:   0 total
+Time:        0.839 s, estimated 1 s
+Ran all test suites.

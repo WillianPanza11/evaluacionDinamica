@@ -1,0 +1,25 @@
+
+> vvs-u2-compras@1.0.0 perf
+> node scripts/rendimiento.js
+
+Medición exploratoria de rendimiento - calcularTotal (CP-18)
+------------------------------------------------------------
+Fecha:          2026-11-22T04:33:20.137Z
+Sistema:        Windows_NT 10.0.26200 (x64)
+Procesador:     11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz (8 núcleos lógicos)
+Memoria:        19.8 GB
+Node.js:        v20.19.4
+Datos:          calcularTotal(19.99, 3, 15)
+Carga:          5 rondas de 100000 llamadas, tras 1 ronda de calentamiento
+
+Ronda 1:        4.61 ms
+Ronda 2:        5.49 ms
+Ronda 3:        3.76 ms
+Ronda 4:        5.55 ms
+Ronda 5:        4.65 ms
+
+Mínimo:         3.76 ms
+Mediana:        4.65 ms por 100000 llamadas
+Máximo:         5.55 ms
+Por llamada:    46.5 ns (según la mediana)
+Control:        25485000.00
